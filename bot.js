@@ -37,7 +37,7 @@ client.on('message', message => {
     .setDescription('Some description here')
     .setThumbnail('https://i.imgur.com/wSTFkRM.png%27'); //And here you put the answer of the bot owo
 		  
-		message.channel.send({exampleEmbed});
+		 message.channel.send({exampleEmbed});
 	}
 }); 
 	  
