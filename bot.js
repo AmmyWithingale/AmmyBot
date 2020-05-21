@@ -49,12 +49,30 @@ client.on('message', message => {
         const embed = new Discord.RichEmbed()
  
   .setAuthor('Khun Aguero Agnis', 'https://cdn.discordapp.com/avatars/438185201844224001/ecbacf2fe666977f1d26eba0b3a5dd4c.png?size=256')
-  .setColor(0x7A6753)
+  .setColor(0xA5EBFF)
   .setDescription("I will not be ruled. I make my own rules. That is the mindset of a ruler.")
   .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/ecbacf2fe666977f1d26eba0b3a5dd4c.png?size=256')
  
-  .addField("About:", "\`is a C-Rank Regular from Khun Family, and is often referred to simply as KHUN. He is a best friend of Twenty-Fifth Baam, one of the main protagonists of Tower of God. He is one of many defected sons of Khun Eduan. He was expelled from the his family because his older sister failed to become one of Zahard's Princesses. \`")
+  .addField("About:", "\`Khun is a C-Rank Regular from Khun Family, and is often referred to simply as KHUN. He is a best friend of Twenty-Fifth Baam, one of the main protagonists of Tower of God. He is one of many defected sons of Khun Eduan. He was expelled from the his family because his older sister failed to become one of Zahard's Princesses. \`")
 .addField("Trivia:", "\`His name is a reference to the football or soccer player Sergio Kun Agüero. It's because SIU really likes football and SIU has revealed that Khun's birthday is on November 29th. And his blood type is B.\`")
+	
+  message.channel.send({embed});         
+    }
+	});
+
+client.on('message', message => {
+    if (message.author === client.user) return;
+    if (message.content.startsWith(prefix + 'rak')) {
+ 
+        const embed = new Discord.RichEmbed()
+ 
+  .setAuthor('Khun Aguero Agnis', 'https://cdn.discordapp.com/avatars/438185201844224001/52bc8a826ae72d9eaece12791ff211ca.png?size=256')
+  .setColor(0xCE6D4C)
+  .setDescription("Of course... A game without me... IS A GAME NOT WORTH WINNING!!!")
+  .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/52bc8a826ae72d9eaece12791ff211ca.png?size=256')
+ 
+  .addField("About:", "\`Rak is a C-rank Regular[10] from the Wraithraiser species. His position is Spear Bearer. He is a direct descendant of the Native One.[11] Rak is originally a giant-size creature, but after he mocked Ranker Yu Han Sung, the Second Floor Test Director, his body was shrunked intentionally by the Ranker. He eventually found out how to get back to his giant-size. Because of this, he also become one of Compression Licenser users.\`")
+.addField("Trivia:", "\`Rak loves bananas but has trouble peeling them. He also hates Quaetro for burning his bananas because they were yellow. He is the best leader and his birthday is on July 7th\`")
 	
   message.channel.send({embed});         
     }
