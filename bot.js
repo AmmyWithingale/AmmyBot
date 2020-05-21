@@ -28,7 +28,7 @@ client.on('message', message => {
 		.setTitle("> Click to check out the manwha! <")
   .setColor(0x884b4b) 
   
-  .setThumbnail("http://en.wikipedia.org/wiki/Special:FilePath/Tower_of_God_Volume_1_Cover.jpg")
+  .setThumbnail("https://cdn.discordapp.com/avatars/438185201844224001/d7176afb8d9faaf68570b50cbda480a4.png?size=256")
   /*
    * Takes a Date object, defaults to current date.
    */
