@@ -26,17 +26,35 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.author === client.user) return;
-    if (message.content.startsWith(prefix + 'test')) {
+    if (message.content.startsWith(prefix + 'baam')) {
  
         const embed = new Discord.RichEmbed()
  
-  .setAuthor('25th Bam', 'https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
+  .setAuthor('25th Baam', 'https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
   .setColor(0x7A6753)
   .setDescription("Stars, thrones, skies, the Outside World, I don't need any of those things. But if someone tries to hurt someone precious to me, I will fight.")
   .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
  
   .addField("About:", "\`Baam for short, is an Irregular and the main protagonist of Tower of God. Baam entered the Tower in search of his best friend Rachel, another Irregular, who wanted to climb to the top of the Tower and see the stars.\`")
-.addField("Trivia:", "\`In Korean, the word BAAM has two meanings: one is NIGHT and the other CHESTNUT and`Baam has the largest harem in the entire series.\`")
+.addField("Trivia:", "\`In Korean, the word BAAM has two meanings: one is NIGHT and the other CHESTNUT and BAAM has the largest HAREM in the entire series.\`")
+	
+  message.channel.send({embed});         
+    }
+	});
+
+client.on('message', message => {
+    if (message.author === client.user) return;
+    if (message.content.startsWith(prefix + 'khunaguero')) {
+ 
+        const embed = new Discord.RichEmbed()
+ 
+  .setAuthor('Khun Aguero Agnis', 'https://cdn.discordapp.com/avatars/438185201844224001/ecbacf2fe666977f1d26eba0b3a5dd4c.png?size=256')
+  .setColor(0x7A6753)
+  .setDescription("I will not be ruled. I make my own rules. That is the mindset of a ruler.")
+  .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/ecbacf2fe666977f1d26eba0b3a5dd4c.png?size=256')
+ 
+  .addField("About:", "\`is a C-Rank Regular from Khun Family, and is often referred to simply as KHUN. He is a best friend of Twenty-Fifth Baam, one of the main protagonists of Tower of God. He is one of many defected sons of Khun Eduan. He was expelled from the his family because his older sister failed to become one of Zahard's Princesses. \`")
+.addField("Trivia:", "\`His name is a reference to the football or soccer player Sergio Kun Agüero. It's because SIU really likes football and SIU has revealed that Khun's birthday is on November 29th. And his blood type is B.\`")
 	
   message.channel.send({embed});         
     }
