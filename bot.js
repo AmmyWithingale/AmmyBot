@@ -31,7 +31,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'test')) {  //Here you put the command like p!help or like that
 	
-		 const exampleEmbed = new Discord.MessageEmbed()
+		 const exampleEmbed = new Discord.RichEmbed()
     .setColor('#0099ff')
     .setTitle('Some title')
     .setDescription('Some description here')
