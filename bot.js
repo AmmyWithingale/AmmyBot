@@ -16,18 +16,32 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
 	
-		 message.channel.send(`:ping_pong: Pingu Pomgus! \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
+		 message.channel.send(`:ping_pong: Pingu Pomgu. \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
 	}
 });  //Ping command owo pretty important for checking if bot works
 
 
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'towerofgod')) {  //Here you put the command like p!help or like that
+	if (message.content.startsWith(prefix + 'manwha')) {  //Here you put the command like p!help or like that
 	
-		 message.channel.send(`To read the manwha of **Tower of God** click here: https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95&page=48`); //And here you put the answer of the bot owo
-	}
+		.setTitle("> Click to check out the manwha! <")
+  .setColor(0x884b4b) 
+  
+  .setThumbnail("http://en.wikipedia.org/wiki/Special:FilePath/Tower_of_God_Volume_1_Cover.jpg")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL("https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95&page=48")
+  
+  message.channel.send({embed});
+				 
+	}		
 }); 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////// I N F O /////////////////////////////////////////////////
 
 client.on('message', message => {
     if (message.author === client.user) return;
@@ -41,7 +55,7 @@ client.on('message', message => {
   .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
  
   .addField("About:", "\`Baam for short, is an Irregular and the main protagonist of Tower of God. Baam entered the Tower in search of his best friend Rachel, another Irregular, who wanted to climb to the top of the Tower and see the stars.\`")
-.addField("Trivia:", "\`In Korean, the word BAAM has two meanings: one is NIGHT and the other CHESTNUT, \`Baam has the largest harem in the entire series.\`")
+.addField("Trivia:", "\`In Korean, the word BAAM has two meanings: one is NIGHT and the other CHESTNUT, `Baam has the largest harem in the entire series.\`")
 	
   message.channel.send({embed});         
     }
