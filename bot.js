@@ -31,11 +31,14 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'test')) {  //Here you put the command like p!help or like that
 	
-		 const exampleEmbed = new Discord.RichEmbed()
-.setColor(0x0099ff)
-         .setTitle("Some title")
-          .setDescription("IDK!")
-          .setThumbnail('https://i.imgur.com/wSTFkRM.png%27%27') //And here you put the answer of the bot owo
+var username = 'AmmyZeru'
+		var avatar = 'https://cdn.discordapp.com/avatars/206606985167110145/85771c2592d4065711da020daffd376d.png?size=256'
+const exampleEmbed = new Discord.RichEmbed()
+		
+  .setAuthor(username, avatar)
+  .setColor(0x7AFFA8)
+  .setDescription("I will not be ruled. I make my own rules. That is the mindset of a ruler.")
+  .setThumbnail(avatar) //And here you put the answer of the bot owo
 		  
 		 message.channel.send({exampleEmbed});
 	}
