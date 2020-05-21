@@ -7,6 +7,9 @@ client.on('ready',() => {
 	   client.user.setPresence({game: {name: "with Bam <33", type: 0}}); //Here you set the status of the bot like pixel that is playing in Japan or stuff like that
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// M A I N ///////////////////////////////////
+
 var prefix = "zr!" //prefix, you can change it
 
 client.on('message', message => {
@@ -32,11 +35,14 @@ client.on('message', message => {
  
         const embed = new Discord.RichEmbed()
  
-  .setAuthor('Rii', 'https://cdn.discordapp.com/avatars/306367704934252546/b827cdbc2be0ad4b5d4fb496b72ab080.png?size=256')
-  .setColor(0x7AFFA8)
-  .setDescription("Owo")
-  .setThumbnail('https://cdn.discordapp.com/avatars/306367704934252546/b827cdbc2be0ad4b5d4fb496b72ab080.png?size=256')
+  .setAuthor('25th Bam', 'https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
+  .setColor(0x7A6753)
+  .setDescription("Stars, thrones, skies, the Outside World, I don't need any of those things. But if someone tries to hurt someone precious to me, I will fight.")
+  .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
  
+  .addField("About:", "\`Baam for short, is an Irregular and the main protagonist of Tower of God. Baam entered the Tower in search of his best friend Rachel, another Irregular, who wanted to climb to the top of the Tower and see the stars.\`")
+.addField("Trivia:", "\`In Korean, the word **baam** has two meanings: one is **night** and the other **chestnut.**`\`,\`Baam has the largest harem in the entire series.\`")
+	
   message.channel.send({embed});         
     }
 	});
