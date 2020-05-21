@@ -66,12 +66,12 @@ client.on('message', message => {
  
         const embed = new Discord.RichEmbed()
  
-  .setAuthor('Khun Aguero Agnis', 'https://cdn.discordapp.com/avatars/438185201844224001/52bc8a826ae72d9eaece12791ff211ca.png?size=256')
+  .setAuthor('Rak Wraithraiser ', 'https://cdn.discordapp.com/avatars/438185201844224001/52bc8a826ae72d9eaece12791ff211ca.png?size=256')
   .setColor(0xCE6D4C)
   .setDescription("Of course... A game without me... IS A GAME NOT WORTH WINNING!!!")
   .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/52bc8a826ae72d9eaece12791ff211ca.png?size=256')
  
-  .addField("About:", "\`Rak is a C-rank Regular[10] from the Wraithraiser species. His position is Spear Bearer. He is a direct descendant of the Native One.[11] Rak is originally a giant-size creature, but after he mocked Ranker Yu Han Sung, the Second Floor Test Director, his body was shrunked intentionally by the Ranker. He eventually found out how to get back to his giant-size. Because of this, he also become one of Compression Licenser users.\`")
+  .addField("About:", "\`Rak is a C-rank Regular from the Wraithraiser species. His position is Spear Bearer. He is a direct descendant of the Native One. Rak is originally a giant-size creature, but after he mocked Ranker Yu Han Sung, the Second Floor Test Director, his body was shrunked intentionally by the Ranker. He eventually found out how to get back to his giant-size. Because of this, he also become one of Compression Licenser users.\`")
 .addField("Trivia:", "\`Rak loves bananas but has trouble peeling them. He also hates Quaetro for burning his bananas because they were yellow. He is the best leader and his birthday is on July 7th\`")
 	
   message.channel.send({embed});         
