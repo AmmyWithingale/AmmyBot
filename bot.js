@@ -25,7 +25,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'manwha')) {  //Here you put the command like p!help or like that
 	
-		.setTitle("> Click to check out the manwha! <")
+	.setAuthor("> Click to check out the manwha! <")
 	 /*
    * Alternatively, use "#984646", [136, 75, 75] or an integer number.
    */
