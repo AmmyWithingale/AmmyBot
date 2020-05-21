@@ -26,23 +26,20 @@ client.on('message', message => {
 	}
 }); 
 
-
 client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'test')) {  //Here you put the command like p!help or like that
-	
-var username = 'AmmyZeru'
-		var avatar = 'https://cdn.discordapp.com/avatars/206606985167110145/85771c2592d4065711da020daffd376d.png?size=256'
-const exampleEmbed = new Discord.RichEmbed()
-		
-  .setAuthor(username, avatar)
+    if (message.author === client.user) return;
+    if (message.content.startsWith(prefix + 'test')) {
+ 
+        const embed = new Discord.RichEmbed()
+ 
+  .setAuthor('Rii', 'https://cdn.discordapp.com/avatars/306367704934252546/b827cdbc2be0ad4b5d4fb496b72ab080.png?size=256')
   .setColor(0x7AFFA8)
-  .setDescription("I will not be ruled. I make my own rules. That is the mindset of a ruler.")
-  .setThumbnail(avatar) //And here you put the answer of the bot owo
-		  
-		 message.channel.send({exampleEmbed});
-	}
-}); 
+  .setDescription("Owo")
+  .setThumbnail('https://cdn.discordapp.com/avatars/306367704934252546/b827cdbc2be0ad4b5d4fb496b72ab080.png?size=256')
+ 
+  message.channel.send({embed});         
+    }
+	});
 	  
 //Important
 client.login(process.env.BOT_TOKEN);
