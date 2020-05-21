@@ -26,8 +26,10 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'manwha')) {  //Here you put the command like p!help or like that
 	
 		.setTitle("> Click to check out the manwha! <")
+	 /*
+   * Alternatively, use "#984646", [136, 75, 75] or an integer number.
+   */
   .setColor(0x884B4B) 
-  
   .setThumbnail("https://cdn.discordapp.com/avatars/438185201844224001/d7176afb8d9faaf68570b50cbda480a4.png?size=256")
   /*
    * Takes a Date object, defaults to current date.
