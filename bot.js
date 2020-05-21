@@ -32,10 +32,10 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'test')) {  //Here you put the command like p!help or like that
 	
 		 const exampleEmbed = new Discord.RichEmbed()
-    .setColor('#0099ff')
-    .setTitle('Some title')
-    .setDescription('Some description here')
-    .setThumbnail('https://i.imgur.com/wSTFkRM.png%27') //And here you put the answer of the bot owo
+.setColor(0x0099ff)
+         .setTitle("Some title")
+          .setDescription("IDK!")
+          .setThumbnail('https://i.imgur.com/wSTFkRM.png%27%27') //And here you put the answer of the bot owo
 		  
 		 message.channel.send({exampleEmbed});
 	}
