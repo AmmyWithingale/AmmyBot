@@ -104,10 +104,9 @@ client.on('message', message => {
 //////////////////////////////// R O L E P L A Y /////////////////////////////////////////////
 
 var hugifs =  [
-     "https://media.tenor.com/images/b6d0903e0d54e05bb993f2eb78b39778/tenor.gif",
-     "https://i.pinimg.com/originals/85/dc/ef/85dcef131af84b515106955e142df54e.gif",
-     "https://i.imgur.com/r9aU2xv.gif",
-     "https://i.pinimg.com/originals/4d/89/d7/4d89d7f963b41a416ec8a55230dab31b.gif"];
+     "https://tenor.com/view/anime-anime-gif-manhwa-tower-of-god-marzo-negro-gif-17067126",
+     "https://tenor.com/view/tower-of-god-anime-khun-bam-friends-gif-16842939",
+     "https://tenor.com/view/anime-tower-of-god-kami-no-tou-manhwa-anime-gif-gif-17193103",
  
  
 client.on('message', message => {
