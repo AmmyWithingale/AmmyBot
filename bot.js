@@ -128,13 +128,35 @@ client.on('message', message => {
     }
 });
 
+
+var fightgifs =  [
+     "https://media1.tenor.com/images/9787f3a79b87c836a9871e5c2b3ecf83/tenor.gif?itemid=16842904",
+     "https://media1.tenor.com/images/ebeba2090b256e4183ee113e8b1f2e33/tenor.gif?itemid=16415435",
+     "https://media1.tenor.com/images/ec18521e5f5d92672dba6940e239407d/tenor.gif?itemid=16842949",
+     "https://media1.tenor.com/images/09778ce7a2b63e22700754292cd31f7b/tenor.gif?itemid=16948316",
+     "https://media1.tenor.com/images/cf5a1bec69d16a3665c528bed1067e62/tenor.gif?itemid=17193120",
+     "https://media1.tenor.com/images/fef00edef8301366c20277ed415f28cd/tenor.gif?itemid=17229170"];
+ 
+ 
 client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'test')) {
-	
-		 message.channel.send(`<:pikawaaa:699523181647757342> test \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
-	}
+    if (message.author === client.user) return;
+     if(message.channel.type === 'dm') return;
+    if (message.content.startsWith(prefix + 'fight')) {
+       
+       
+    let member = message.mentions.members.first();
+         if(!member)
+        return message.reply("Try mentioning the person"); 
+       
+        var selectfightGif = fightgifs[Math.floor(Math.random() * fightgifs.length)];
+          message.channel.send(`**${message.author.username}** fought with **${member.user.username}**`);
+        const embed = new Discord.RichEmbed()
+   .setColor(0xC6E2FF)
+  .setImage(selectfightGif)
+   message.channel.send({embed});
+    }
 });
+
 	  
 //Important
 client.login(process.env.BOT_TOKEN);
