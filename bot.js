@@ -20,11 +20,12 @@ client.on('message', message => {
 	}
 });  //Ping command owo pretty important for checking if bot works
 
-const embed = new Discord.RichEmbed()
+
 client.on('message', message => {
     if (message.author === client.user) return;
     if (message.content.startsWith(prefix + 'manwha')) {  //Here you put the command like p!help or like that
    
+	    const embed = new Discord.RichEmbed()
         .setTitle("> Click to check out the manwha! <")
      /*
    * Alternatively, use "#984646", [136, 75, 75] or an integer number.
