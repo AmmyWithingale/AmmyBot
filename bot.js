@@ -132,7 +132,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'test')) {
 	
-		 message.channel.send(`:pikawaaa: test \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
+		 message.channel.send(`<:pikawaaa:699523181647757342> test \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
 	}
 });
 	  
