@@ -31,7 +31,7 @@ client.on('message', message => {
    * Alternatively, use "#984646", [136, 75, 75] or an integer number.
    */
   .setColor(0x884B4B)
-  .setDescription ("Tower of God (Korean: 신의 탑; RR: Sin-ui Tap) is a South Korean web manhwa written and illustrated by S.I.U. It has been serialized in Naver's webtoon platform Naver Webtoon since June 30, 2010, with the individual chapters collected and published by Young Com into two volumes as of April 2020. Tower of God received official English translations by LINE Webtoon in 2014.")
+  .setDescription ("**Tower of God (Korean: 신의 탑; RR: Sin-ui Tap)** is a South Korean web manhwa written and illustrated by **S.I.U.** It has been serialized in Naver's webtoon platform Naver Webtoon since June 30, 2010, with the individual chapters collected and published by Young Com into two volumes as of April 2020. Tower of God received official English translations by LINE Webtoon in 2014.")
   .setThumbnail("https://media.discordapp.net/attachments/704994881247903817/713021582171439144/Tower_of_God_Volume_1_Cover.png")
   /*
    * Takes a Date object, defaults to current date.
@@ -158,6 +158,25 @@ client.on('message', message => {
     }
 });
 
+var blushgifs =  [
+     "https://media1.tenor.com/images/009f033d4573464f51e4da481f8424f5/tenor.gif?itemid=17263578",
+     "https://media1.tenor.com/images/5b44318ecd14a743f28a8475170b6508/tenor.gif?itemid=17195402",
+     "https://media1.tenor.com/images/66189e363445b3031f4f2e568627fd68/tenor.gif?itemid=17192315"];
+ 
+ 
+client.on('message', message => {
+    if (message.author === client.user) return;
+     if(message.channel.type === 'dm') return;
+    if (message.content.startsWith(prefix + 'blush')) {
+       
+        var selectblushGif = blushgifs[Math.floor(Math.random() * blushgifs.length)];
+          message.channel.send(`**${message.author.username}** is blushing.`);
+        const embed = new Discord.RichEmbed()
+   .setColor(0xC6E2FF)
+  .setImage(selectblushGif)
+   message.channel.send({embed});
+    }
+});
 	  
 //Important
 client.login(process.env.BOT_TOKEN);
