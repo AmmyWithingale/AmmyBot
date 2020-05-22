@@ -106,7 +106,7 @@ client.on('message', message => {
 var hugifs =  [
      "https://tenor.com/view/anime-anime-gif-manhwa-tower-of-god-marzo-negro-gif-17067126",
      "https://tenor.com/view/tower-of-god-anime-khun-bam-friends-gif-16842939",
-     "https://tenor.com/view/anime-tower-of-god-kami-no-tou-manhwa-anime-gif-gif-17193103",
+     "https://tenor.com/view/anime-tower-of-god-kami-no-tou-manhwa-anime-gif-gif-17193103"];
  
  
 client.on('message', message => {
