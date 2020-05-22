@@ -104,9 +104,9 @@ client.on('message', message => {
 //////////////////////////////// R O L E P L A Y /////////////////////////////////////////////
 
 var hugifs =  [
-     "https://tenor.com/view/anime-anime-gif-manhwa-tower-of-god-marzo-negro-gif-17067126",
-     "https://tenor.com/view/tower-of-god-anime-khun-bam-friends-gif-16842939",
-     "https://tenor.com/view/anime-tower-of-god-kami-no-tou-manhwa-anime-gif-gif-17193103"];
+     "https://media1.tenor.com/images/9ec6e2fb28858ba0664e10de1ba5a6c8/tenor.gif?itemid=17067126",
+     "https://media1.tenor.com/images/d81281c85f295795448f743c7dd11857/tenor.gif?itemid=16842939",
+     "https://media1.tenor.com/images/4976cd16a95e32932f29222a2d96c16f/tenor.gif?itemid=17193103"];
  
  
 client.on('message', message => {
@@ -122,7 +122,7 @@ client.on('message', message => {
         var selecthugGif = hugifs[Math.floor(Math.random() * hugifs.length)];
           message.channel.send(`**${message.author.username}** hugged **${member.user.username}**`);
         const embed = new Discord.RichEmbed()
-   .setColor(0xC76CF5)
+   .setColor(0xC6E2FF)
   .setImage(selecthugGif)
    message.channel.send({embed});
     }
