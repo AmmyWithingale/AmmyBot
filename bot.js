@@ -31,6 +31,7 @@ client.on('message', message => {
    * Alternatively, use "#984646", [136, 75, 75] or an integer number.
    */
   .setColor(0x884B4B)
+  .setDescription ("Tower of God (Korean: 신의 탑; RR: Sin-ui Tap) is a South Korean web manhwa written and illustrated by S.I.U. It has been serialized in Naver's webtoon platform Naver Webtoon since June 30, 2010, with the individual chapters collected and published by Young Com into two volumes as of April 2020. Tower of God received official English translations by LINE Webtoon in 2014.")
   .setThumbnail("https://media.discordapp.net/attachments/704994881247903817/713021582171439144/Tower_of_God_Volume_1_Cover.png")
   /*
    * Takes a Date object, defaults to current date.
