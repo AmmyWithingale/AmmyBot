@@ -31,7 +31,7 @@ client.on('message', message => {
    * Alternatively, use "#984646", [136, 75, 75] or an integer number.
    */
   .setColor(0x884B4B)
-  .setThumbnail("https://cdn.discordapp.com/avatars/438185201844224001/d7176afb8d9faaf68570b50cbda480a4.png?size=256")
+  .setThumbnail("https://media.discordapp.net/attachments/704994881247903817/713021582171439144/Tower_of_God_Volume_1_Cover.png")
   /*
    * Takes a Date object, defaults to current date.
    */
