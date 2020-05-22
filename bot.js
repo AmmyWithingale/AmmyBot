@@ -127,6 +127,14 @@ client.on('message', message => {
    message.channel.send({embed});
     }
 });
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'test')) {
+	
+		 message.channel.send(`:pikawaaa: test \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
+	}
+});
 	  
 //Important
 client.login(process.env.BOT_TOKEN);
