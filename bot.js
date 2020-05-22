@@ -20,6 +20,27 @@ client.on('message', message => {
 	}
 });  //Ping command owo pretty important for checking if bot works
 
+const embed = new Discord.RichEmbed()
+client.on('message', message => {
+    if (message.author === client.user) return;
+    if (message.content.startsWith(prefix + 'manwha')) {  //Here you put the command like p!help or like that
+   
+        .setTitle("> Click to check out the manwha! <")
+     /*
+   * Alternatively, use "#984646", [136, 75, 75] or an integer number.
+   */
+  .setColor(0x884B4B)
+  .setThumbnail("https://cdn.discordapp.com/avatars/438185201844224001/d7176afb8d9faaf68570b50cbda480a4.png?size=256")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL("https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95&page=48")
+ 
+  message.channel.send({embed});
+                 
+    }      
+});
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////// I N F O /////////////////////////////////////////////////
