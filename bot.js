@@ -107,6 +107,7 @@ client.on('message', message => {
 var hugifs =  [
      "https://media1.tenor.com/images/9ec6e2fb28858ba0664e10de1ba5a6c8/tenor.gif?itemid=17067126",
      "https://media1.tenor.com/images/d81281c85f295795448f743c7dd11857/tenor.gif?itemid=16842939",
+     "https://66.media.tumblr.com/a29c896f8a4cd60be085ce18434059b2/4418b50c505076d2-c1/s500x750/9ad22c74950d28f80e3e4ab89596d2454921439d.gif",
      "https://media1.tenor.com/images/4976cd16a95e32932f29222a2d96c16f/tenor.gif?itemid=17193103"];
  
  
