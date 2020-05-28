@@ -169,13 +169,9 @@ client.on('message', message => {
     if (message.author === client.user) return;
      if(message.channel.type === 'dm') return;
     if (message.content.startsWith(prefix + 'slap')) {
-       
-	     let member = message.mentions.members.first();
-         if(!member)
-        return message.reply("Try mentioning the person"); 
 	    
         var selectslapGif = slapgifs[Math.floor(Math.random() * slapgifs.length)];
-          message.channel.send(`**${message.author.username}** slapped **${member.user.username}**`);
+          message.channel.send(`**${message.author.username}** slapped oop`);
         const embed = new Discord.RichEmbed()
    .setColor(0xC6E2FF)
   .setImage(selectslapGif)
