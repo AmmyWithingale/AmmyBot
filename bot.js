@@ -137,7 +137,7 @@ var fightgifs =  [
      "https://media1.tenor.com/images/ec18521e5f5d92672dba6940e239407d/tenor.gif?itemid=16842949",
      "https://media1.tenor.com/images/09778ce7a2b63e22700754292cd31f7b/tenor.gif?itemid=16948316",
      "https://media1.tenor.com/images/cf5a1bec69d16a3665c528bed1067e62/tenor.gif?itemid=17193120",
-     "https://66.media.tumblr.com/4e7b92ebb20dba18a74def056dc0d1b8/82d216d80ef76447-07/s500x750/03c8e5cc192757b8c18fbbdf4457b94d0b4d9213.gif"
+     "https://66.media.tumblr.com/4e7b92ebb20dba18a74def056dc0d1b8/82d216d80ef76447-07/s500x750/03c8e5cc192757b8c18fbbdf4457b94d0b4d9213.gif",
      "https://media1.tenor.com/images/fef00edef8301366c20277ed415f28cd/tenor.gif?itemid=17229170"];
  
  
@@ -169,6 +169,10 @@ client.on('message', message => {
     if (message.author === client.user) return;
      if(message.channel.type === 'dm') return;
     if (message.content.startsWith(prefix + 'slap')) {
+	    
+	    	     let member = message.mentions.members.first();
+         if(!member)
+        return message.reply("Try mentioning the person"); 
 	    
         var selectslapGif = slapgifs[Math.floor(Math.random() * slapgifs.length)];
           message.channel.send(`**${message.author.username}** slapped oop`);
