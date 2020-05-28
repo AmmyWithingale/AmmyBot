@@ -137,6 +137,7 @@ var fightgifs =  [
      "https://media1.tenor.com/images/ec18521e5f5d92672dba6940e239407d/tenor.gif?itemid=16842949",
      "https://media1.tenor.com/images/09778ce7a2b63e22700754292cd31f7b/tenor.gif?itemid=16948316",
      "https://media1.tenor.com/images/cf5a1bec69d16a3665c528bed1067e62/tenor.gif?itemid=17193120",
+     "https://66.media.tumblr.com/4e7b92ebb20dba18a74def056dc0d1b8/82d216d80ef76447-07/s500x750/03c8e5cc192757b8c18fbbdf4457b94d0b4d9213.gif"
      "https://media1.tenor.com/images/fef00edef8301366c20277ed415f28cd/tenor.gif?itemid=17229170"];
  
  
@@ -159,9 +160,35 @@ client.on('message', message => {
     }
 });
 
+var slapgifs =  [
+     "https://media.tenor.com/images/c8832c9d5596ed9e6297c947047b584d/tenor.gif", //filler gif
+     "https://66.media.tumblr.com/e3c4f826a918e3009bbf937df1443331/9e1e961e9a3eddda-a3/s400x600/bf024cf4b813a5d1f4b684a845de4fda9839a927.gif"];
+ 
+ 
+client.on('message', message => {
+    if (message.author === client.user) return;
+     if(message.channel.type === 'dm') return;
+    if (message.content.startsWith(prefix + 'slap')) {
+       
+	     let member = message.mentions.members.first();
+         if(!member)
+        return message.reply("Try mentioning the person"); 
+	    
+        var selectslapGif = slapgifs[Math.floor(Math.random() * slapgifs.length)];
+          message.channel.send(`**${message.author.username}** slapped **${member.user.username}**`);
+        const embed = new Discord.RichEmbed()
+   .setColor(0xC6E2FF)
+  .setImage(selectslapGif)
+   message.channel.send({embed});
+    }
+});
+	  
+
 var blushgifs =  [
      "https://media1.tenor.com/images/009f033d4573464f51e4da481f8424f5/tenor.gif?itemid=17263578",
      "https://media1.tenor.com/images/5b44318ecd14a743f28a8475170b6508/tenor.gif?itemid=17195402",
+     "https://66.media.tumblr.com/4065c8f24ac8ca3df6bb3ab53996bf2f/cb53d39b4e360a11-b6/s1280x1920/e3c97395a5f67fa801a271bc651ee09792af73e8.gif",
+     "https://66.media.tumblr.com/43fb3d3df3d503c9ff7626cca22d0275/cb53d39b4e360a11-3f/s1280x1920/ba329447466e50ea50c9db4e59f925cf4ea23e8d.gif",
      "https://media1.tenor.com/images/66189e363445b3031f4f2e568627fd68/tenor.gif?itemid=17192315"];
  
  
@@ -178,6 +205,6 @@ client.on('message', message => {
    message.channel.send({embed});
     }
 });
-	  
+	
 //Important
 client.login(process.env.BOT_TOKEN);
