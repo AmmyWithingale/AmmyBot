@@ -23,10 +23,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.author === client.user) return;
-    if (message.content.startsWith(prefix + 'manwha')) {  //Here you put the command like p!help or like that
+    if (message.content.startsWith(prefix + 'webtoon')) {  //Here you put the command like p!help or like that
    
 	    const embed = new Discord.RichEmbed()
-        .setTitle("> Click to check out the manwha! <")
+        .setTitle("> Click to check out the webtoon! <")
      /*
    * Alternatively, use "#984646", [136, 75, 75] or an integer number.
    */
@@ -49,14 +49,14 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'help')) {
 		
 	const embed = new Discord.RichEmbed()
-  .setTitle("Command: Beep boop!")
+  .setTitle("Command List: Beep boop!")
    .setColor(0x7BB2EC)
   .setDescription("Hello! These are all of my commands you can use! Have fun <33")
 .setThumbnail("https://66.media.tumblr.com/fd87e4fed4e4f11c8ad67b394719e0e2/9291ae1250585751-90/s250x400/c352fa277f7e7138c93ff325a1b7e4d35593a20d.gif")
 
   .addField("Main Commands",
-    "\`help\`,\`ping\`,\`manwha\,\`server\`")
-
+    "\`help\`,\`ping\`,\`webtoon\`,\`server\`")
+.addField("Information Commands (Tower of God Characters!)", "\`baam\`, \`khunaguero\` \`rak\`")
 .addField("Roleplay Commands", "\`hug\`,\`slap\`,\`eat\`,\`fight\`,\`hungry\`,\`smile\`,\`blush\`")
   message.channel.send({embed});		
 	}
