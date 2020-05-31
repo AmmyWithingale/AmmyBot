@@ -228,6 +228,60 @@ client.on('message', message => {
     }
 });
 
-	
+var hungrygifs =  [
+     "https://media1.tenor.com/images/2034eebc6eb08606fb4c18cb8aada4cc/tenor.gif?itemid=17193098",
+     "https://media1.tenor.com/images/6037cbad7860cc8c40326d4fb7d20d40/tenor.gif?itemid=17193077"];
+ 
+client.on('message', message => {
+    if (message.author === client.user) return;
+     if(message.channel.type === 'dm') return;
+    if (message.content.startsWith(prefix + 'hungry')) {
+       
+        var selecthungryGif = hungrygifs[Math.floor(Math.random() * hungrygifs.length)];
+          message.channel.send(`**${message.author.username}** is hungry`);
+        const embed = new Discord.RichEmbed()
+   .setColor(0xC6E2FF)
+  .setImage(selecthungryGif)
+   message.channel.send({embed});
+    }
+});
+
+var eatgifs =  [
+     "https://media1.tenor.com/images/26f574c00f92f9c72f3937982de46b67/tenor.gif?itemid=17264523",
+     "https://66.media.tumblr.com/0abcd90a025493e95955326e25a37c20/2e12dac4ec1e9b78-d4/s400x600/ebb79ff1b7b3219f835f56942c9a59e0d4f9517d.gif",
+     "https://media1.tenor.com/images/dbe00e6943b3a2b82b63a866651f2ceb/tenor.gif?itemid=17193078"];
+ 
+client.on('message', message => {
+    if (message.author === client.user) return;
+     if(message.channel.type === 'dm') return;
+    if (message.content.startsWith(prefix + 'eat')) {
+       
+        var selecteatGif = eatgifs[Math.floor(Math.random() * eatgifs.length)];
+          message.channel.send(`**${message.author.username}** is eating`);
+        const embed = new Discord.RichEmbed()
+   .setColor(0xC6E2FF)
+  .setImage(selecteatGif)
+   message.channel.send({embed});
+    }
+});
+
+var sipgifs =  [
+     "https://66.media.tumblr.com/ba0aafe401cd3da3e4c09bf6f6f428c9/195731eea1335e2b-66/s400x600/aa7121d35d9774330d7e5b07b416a5dc25eedd5c.gif",
+     "https://media1.tenor.com/images/8b6421b8aaf7ea93fa669e01cfbafede/tenor.gif?itemid=11566439"]; //filler gif
+ 
+client.on('message', message => {
+    if (message.author === client.user) return;
+     if(message.channel.type === 'dm') return;
+    if (message.content.startsWith(prefix + 'sip')) {
+       
+        var selectsipGif = sipgifs[Math.floor(Math.random() * sipgifs.length)];
+          message.channel.send(`**${message.author.username}** takes a sip`);
+        const embed = new Discord.RichEmbed()
+   .setColor(0xC6E2FF)
+  .setImage(selectsipGif)
+   message.channel.send({embed});
+    }
+});
+
 //Important
 client.login(process.env.BOT_TOKEN);
