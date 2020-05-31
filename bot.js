@@ -74,7 +74,7 @@ client.on('message', message => {
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL("https://discord.gg/gwFXT55")
+  .setURL("https://disboard.org/server/694433890387099668")
   
   message.channel.send({embed});
 				 
