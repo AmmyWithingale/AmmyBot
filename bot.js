@@ -137,6 +137,9 @@ var fightgifs =  [
      "https://media1.tenor.com/images/ec18521e5f5d92672dba6940e239407d/tenor.gif?itemid=16842949",
      "https://media1.tenor.com/images/09778ce7a2b63e22700754292cd31f7b/tenor.gif?itemid=16948316",
      "https://media1.tenor.com/images/cf5a1bec69d16a3665c528bed1067e62/tenor.gif?itemid=17193120",
+     "https://media1.tenor.com/images/9aae692e1eb7622985e22522e7b25853/tenor.gif?itemid=17333261",
+     "https://media1.tenor.com/images/1fc02d8046d1d42bb841ae0aa03d2134/tenor.gif?itemid=17333060",
+     "https://66.media.tumblr.com/088687c2f5949be3e60a2d36ea6e2182/17d819c69520f704-34/s500x750/84cd23d97629b3d4d068564aa957656ce9bf3238.gif",
      "https://66.media.tumblr.com/4e7b92ebb20dba18a74def056dc0d1b8/82d216d80ef76447-07/s500x750/03c8e5cc192757b8c18fbbdf4457b94d0b4d9213.gif",
      "https://media1.tenor.com/images/fef00edef8301366c20277ed415f28cd/tenor.gif?itemid=17229170"];
  
@@ -205,6 +208,26 @@ client.on('message', message => {
    message.channel.send({embed});
     }
 });
+
+var smilegifs =  [
+     "https://66.media.tumblr.com/a978e687e9ef8b5cf9869d40ff4ac437/1cb22668d4bf6699-54/s500x750/0c0c523cb2c11a0abddfb0ab8ad1b53dfa261c19.gif",
+     "https://66.media.tumblr.com/3dfdd3b5a0917328a262c7c69b1abf8b/5902c1b1dc001a07-2e/s400x600/004c073385e2835da56bb7f6b4accda1fb0502e6.gif",
+     "https://66.media.tumblr.com/8b498fb0cdd4f71c94e6606ca4711371/9291ae1250585751-49/s540x810/942a78bf481bef6c6cb9d7220c6558bb542c6ac9.gif"];
+ 
+client.on('message', message => {
+    if (message.author === client.user) return;
+     if(message.channel.type === 'dm') return;
+    if (message.content.startsWith(prefix + 'smile')) {
+       
+        var selectsmileGif = smilegifs[Math.floor(Math.random() * smilegifs.length)];
+          message.channel.send(`**${message.author.username}** is smiling`);
+        const embed = new Discord.RichEmbed()
+   .setColor(0xC6E2FF)
+  .setImage(selectsmileGif)
+   message.channel.send({embed});
+    }
+});
+
 	
 //Important
 client.login(process.env.BOT_TOKEN);
