@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.on('ready',() => {
 	
-	   client.user.setPresence({game: {name: "with Bam <33", type: 0}}); //Here you set the status of the bot like pixel that is playing in Japan or stuff like that
+	   client.user.setPresence({game: {name: "with Bam | zr!help", type: 0}}); //Here you set the status of the bot like pixel that is playing in Japan or stuff like that
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -16,7 +16,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
 	
-		 message.channel.send(`:ping_pong: Pingu Pomgu. \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
+		 message.channel.send(`:ping_pong: Pingu! \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
 	}
 });  //Ping command owo pretty important for checking if bot works
 
@@ -43,6 +43,44 @@ client.on('message', message => {
                  
     }      
 });
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'help')) {
+		
+	const embed = new Discord.RichEmbed()
+  .setTitle("Command: Beep boop!")
+   .setColor(0x7BB2EC)
+  .setDescription("Hello! These are all of my commands you can use! Have fun <33")
+.setThumbnail("https://66.media.tumblr.com/fd87e4fed4e4f11c8ad67b394719e0e2/9291ae1250585751-90/s250x400/c352fa277f7e7138c93ff325a1b7e4d35593a20d.gif")
+
+  .addField("Main Commands",
+    "\`help\`,\`ping\`,\`manwha\,\`server\`")
+
+.addField("Roleplay Commands", "\`hug\`,\`slap\`,\`eat\`,\`fight\`,\`hungry\`,\`smile\`,\`blush\`")
+  message.channel.send({embed});		
+	}
+});
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'server')) {
+		const embed = new Discord.RichEmbed()
+  .setTitle("> Click to join our server! <")
+  .setColor(0x7BB2EC) 
+  
+  .setThumbnail("https://66.media.tumblr.com/fd87e4fed4e4f11c8ad67b394719e0e2/9291ae1250585751-90/s250x400/c352fa277f7e7138c93ff325a1b7e4d35593a20d.gif")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL("https://discord.gg/gwFXT55")
+  
+  message.channel.send({embed});
+				 
+	}		
+});
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////// I N F O /////////////////////////////////////////////////
