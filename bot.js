@@ -91,10 +91,10 @@ client.on('message', message => {
  
         const embed = new Discord.RichEmbed()
  
-  .setAuthor('25th Baam', 'https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
+  .setAuthor('25th Baam', 'https://66.media.tumblr.com/8624b8fcd4b3387b3267a79aba3e531c/5902c1b1dc001a07-55/s400x600/17d0e61ba7ea1d192b04fc3f2893e38c2088c953.gif')
   .setColor(0x7A6753)
   .setDescription("Stars, thrones, skies, the Outside World, I don't need any of those things. But if someone tries to hurt someone precious to me, I will fight.")
-  .setThumbnail('https://cdn.discordapp.com/avatars/438185201844224001/01ec47306dbb7490b51b73ebced7beed.png?size=256')
+  .setThumbnail('https://66.media.tumblr.com/8624b8fcd4b3387b3267a79aba3e531c/5902c1b1dc001a07-55/s400x600/17d0e61ba7ea1d192b04fc3f2893e38c2088c953.gif')
  
   .addField("About:", "\`Baam for short, is an Irregular and the main protagonist of Tower of God. Baam entered the Tower in search of his best friend Rachel, another Irregular, who wanted to climb to the top of the Tower and see the stars.\`")
 .addField("Trivia:", "\`In Korean, the word BAAM has two meanings: one is NIGHT and the other CHESTNUT and BAAM has the largest HAREM in the entire series.\`")
