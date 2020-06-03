@@ -55,9 +55,9 @@ client.on('message', message => {
 .setThumbnail("https://66.media.tumblr.com/fd87e4fed4e4f11c8ad67b394719e0e2/9291ae1250585751-90/s250x400/c352fa277f7e7138c93ff325a1b7e4d35593a20d.gif")
 
   .addField("Main Commands",
-    "\`help\`,\`ping\`,\`webtoon\`,\`server\`", true)
-.addField("Information Commands (Tower of God Characters!)", "\`baam\`, \`khunaguero\` \`rak\`", true)
-.addField("Roleplay Commands", "\`hug\`,\`slap\`,\`eat\`,\`fight\`,\`hungry\`,\`smile\`,\`blush\`", true)
+    "\`help\`,\`ping\`,\`webtoon\`,\`server\`")
+.addField("Information Commands (Tower of God Characters!)", "\`baam\`, \`khunaguero\` \`rak\`")
+.addField("Roleplay Commands", "\`hug\`,\`slap\`,\`eat\`,\`fight\`,\`hungry\`,\`smile\`,\`blush\`")
   message.channel.send({embed});		
 	}
 });
