@@ -15,9 +15,14 @@ var prefix = "zr!" //prefix, you can change it
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
-	
-		 message.channel.send(`:ping_pong: Pingu! \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
-	}
+		
+	    const embed = new Discord.RichEmbed()
+	  .setTitle("Pinged: Beep boop!")
+   .setColor(0x7BB2EC)
+  .setDescription (`:ping_pong: Pingu! \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``)
+.setThumbnail("https://66.media.tumblr.com/fd87e4fed4e4f11c8ad67b394719e0e2/9291ae1250585751-90/s250x400/c352fa277f7e7138c93ff325a1b7e4d35593a20d.gif")
+	  message.channel.send({embed});	
+	    }
 });  //Ping command owo pretty important for checking if bot works
 
 
