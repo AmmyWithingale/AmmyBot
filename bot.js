@@ -291,6 +291,7 @@ client.on('message', message => {
 
 var eatgifs =  [
      "https://media1.tenor.com/images/26f574c00f92f9c72f3937982de46b67/tenor.gif?itemid=17264523",
+     "https://media1.tenor.com/images/d55edb8796467b84eb28c5ba15197593/tenor.gif?itemid=17394882",
      "https://66.media.tumblr.com/0abcd90a025493e95955326e25a37c20/2e12dac4ec1e9b78-d4/s400x600/ebb79ff1b7b3219f835f56942c9a59e0d4f9517d.gif",
      "https://media1.tenor.com/images/dbe00e6943b3a2b82b63a866651f2ceb/tenor.gif?itemid=17193078"];
  
