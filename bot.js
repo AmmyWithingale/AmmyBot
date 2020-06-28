@@ -97,7 +97,7 @@ client.on('message', message => {
 	}
 		
 	const embed = new Discord.RichEmbed()
-   .setColor(0xC76CF5)
+   .setColor(0x7BB2EC)
   .setDescription(args.splice(1).join(" "))
   message.channel.send({embed});
 
